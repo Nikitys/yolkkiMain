@@ -1,0 +1,46 @@
+/*
+  Flaticon icon font: Flaticon
+  Creation date: 03/05/2018 11:41
+  */
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/Flaticon.woff") format("woff"),
+  url("../fonts/Flaticon.ttf") format("truetype"),
+  url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 14px;
+  font-style: normal;
+  color:#d51317;
+}
+
+.flaticon-salad:before { content: "\f100"; }
+.flaticon-gym-1:before { content: "\f101"; }
+.flaticon-gym:before { content: "\f102"; }
+.flaticon-baby-buggy:before { content: "\f103"; }
+.flaticon-fountain:before { content: "\f104"; }
+.flaticon-family-room:before { content: "\f105"; }
+.flaticon-arrows-2:before { content: "\f106"; }
+.flaticon-arrows-1:before { content: "\f107"; }
+.flaticon-arrows:before { content: "\f108"; }
+.flaticon-smartphone-call:before { content: "\f109"; }
+.flaticon-up-chevron:before { content: "\f10a"; }
+.flaticon-left-chevron:before { content: "\f10b"; }
+.flaticon-right-chevron:before { content: "\f10c"; }
+.flaticon-down-chevron:before { content: "\f10d"; }
+.flaticon-menu:before { content: "\f10e"; }

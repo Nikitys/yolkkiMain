@@ -1,0 +1,16 @@
+@import 'common/normalize';
+@import 'common/_mixins.scss';
+@import 'common/adj';
+@import 'common/fonts';
+@import 'common/_flaticon';
+@import 'common/plugins/slick';
+@import 'common/plugins/slick-theme';
+@import 'common/plugins/jquery.fancybox';
+@import 'common/plugins/animation';
+@import 'common/plugins/owl.carousel';
+@import 'common/plugins/owl.theme.default';
+@import 'common/plugins/jquery.fullpage.min';
+@import 'common/plugins/pace';
+//страницы
+@import 'common/pages/index';
+

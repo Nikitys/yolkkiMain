@@ -1,0 +1,291 @@
+extends ../template
+
+block variables
+  - var title = 'Добро пожаловать'
+
+block content
+    .preloader
+    nav.menu.animated.active
+        a(href="#").menu-logo
+            img(alt="logo" src="assets/images/logo.png").menu-logo__img
+        a(href="#").menu-but-open
+            i.flaticon-menu.menu-but-open__img
+            span.menu-but-open__text меню
+        nav.nav
+            .nav-item
+                .nav-item-first
+                    a(href="#").nav-item-first-arrow
+                        i.flaticon-right-chevron.nav-item-first-arrow__img
+                    a(href="#").nav-item-first__title О проекте
+                .nav-item-second
+                    a(href="#").nav-item-second__item О проекте
+                    a(href="#").nav-item-second__item Наша команда
+                    a(href="#").nav-item-second__item Коммерческие помещения
+                    a(href="#").nav-item-second__item Расположение
+                    a(href="#").nav-item-second__item Инфраструктура
+                    a(href="#").nav-item-second__item Новости
+                    a(href="#").nav-item-second__item Документация
+                    a(href="#").nav-item-second__item Партнеры
+                    a(href="#").nav-item-second__item Видео
+                    a(href="#").nav-item-second__item Пресса о нас
+            .nav-item
+                .nav-item-first
+                    a(href="#").nav-item-first__title Ход строительства
+            .nav-item
+                .nav-item-first
+                    a(href="#").nav-item-first-arrow
+                        i.flaticon-right-chevron.nav-item-first-arrow__img
+                    a(href="#").nav-item-first__title Выбрать квартиру
+                .nav-item-second
+                    a(href="#").nav-item-second__item О проекте
+                    a(href="#").nav-item-second__item Наша команда
+                    a(href="#").nav-item-second__item Коммерческие помещения
+                    a(href="#").nav-item-second__item Расположение
+            .nav-item
+                .nav-item-first
+                    a(href="#").nav-item-first__title Акции
+            .nav-item
+                .nav-item-first
+                    a(href="#").nav-item-first__title Контакты
+    .main-content
+        section.section.main.active
+            .main-phone
+                i.flaticon-smartphone-call.main-phone__img
+                .main-phone__text Отдел продаж:
+                a(href="tel:+78125011859").main-phone__phone +7 (812) 501-18-59
+            .bg-slider
+                .bg-slider-item--inn
+                    .bg-slider-item(style="background:url(assets/images/slider-bg4.jpg) center center no-repeat")
+                .bg-slider-item--inn
+                    .bg-slider-item(style="background:url(assets/images/slider-bg2.jpg) center center no-repeat")
+                .bg-slider-item--inn
+                    .bg-slider-item(style="background:url(assets/images/slider-bg3.jpg) center center no-repeat")
+                .bg-slider-item--inn
+                    .bg-slider-item(style="background:url(assets/images/slider-bg1.jpg) center center no-repeat")
+            .main-block.animated
+                .container-medium
+                    .main-block__title «Yolkki Village» - квартиры в Ленинградской области
+                    .main-block__text До конца апреля скидка на 50 квартир до 24%
+                    a(href="#").contacts-left__but.main-block__but Купить квартиру
+            a(href="#").main-contacts-but
+                i.flaticon-right-chevron.main-contacts-but__img
+                .main-contacts-but__text контакты
+            a(href="#").main-scroll-but
+                i.flaticon-arrows.main-scroll-but__img
+                .main-scroll-but__text листайте вниз
+            .main-contacts.animated
+                .main-contacts__title Контакты
+                a(href="#").main-contacts-close
+                    img(src="assets/images/cross-out.png").main-contacts-close__img
+                .main-contacts-list
+                    .main-contacts-item
+                        .main-contacts-item__title Отдел продаж ЖК «Yolkki Village»
+                        .main-contacts-item__text 197101, Санкт-Петербург, <br> улица Чапаева, дом 15, БЦ "Сенатор", <br> Ближайшая станция метро «Горьковская» - 10 минут пешком.
+                    .main-contacts-item
+                        .main-contacts-item__title Телефон
+                        .main-contacts-item__text +7 (812) 501-18-59
+                    .main-contacts-item
+                        .main-contacts-item__title Почта
+                        .main-contacts-item__text sale@yolkki.ru
+                .main-contacts-map#yandexmap
+
+        section.section.mesto
+            .container-small
+                .mesto__title Местоположение
+                .mesto__text <b>«Yolkki Village»</b> возводится на территории Всеволожского р-на  в д. Скотное в отдалении от промышленных предприятий. Новоселов ждет размеренная жизнь в окружении зелени, без шума и городской суеты. Из окон квартир открываются красочные пейзажи. А многообразие озер, горнолыжных курортов и мест для семейного отдыха удивит даже самого взыскательного покупателя.
+                .mesto-slider-top
+                    .mesto-slider__title Уникальная природа
+                    .mesto-slider-buttons
+                        a(href="#").mesto-slider-buttons-but.mesto-slider-buttons-but--prev
+                            i.mesto-slider-buttons-but__img.flaticon-arrows-2
+                        a(href="#").mesto-slider-buttons-but.mesto-slider-buttons-but--next
+                            i.mesto-slider-buttons-but__img.flaticon-arrows-1
+            .mesto-slider
+                .mesto-slider-item
+                    .mesto-slider-item__inn(style="background:url(assets/images/slider-bg1.jpg) center center no-repeat")
+                .mesto-slider-item
+                    .mesto-slider-item__inn(style="background:url(assets/images/slider-bg1.jpg) center center no-repeat")
+                .mesto-slider-item
+                    .mesto-slider-item__inn(style="background:url(assets/images/slider-bg1.jpg) center center no-repeat")
+                .mesto-slider-item
+                    .mesto-slider-item__inn(style="background:url(assets/images/slider-bg1.jpg) center center no-repeat")
+                .mesto-slider-item
+                    .mesto-slider-item__inn(style="background:url(assets/images/slider-bg1.jpg) center center no-repeat")
+            .mesto-bg
+                img(data-animated="slideInUp" src="assets/images/yolka1.png").mesto-bg__img.mesto-bg__img--first.animated
+                img(data-animated="slideInUp" src="assets/images/yolka2.png").mesto-bg__img.mesto-bg__img--second.animated
+        section.section.infra
+            .container-small
+                .main-title.infra__title Инфраструктура
+                .infra__text
+                    p Квартал подразумевает собственное социальное и торговое благоустройство. Запланировано строительство детского сада и школы. Также недалеко от комплекса находятся уже полностью обжитые микрорайоны с развитой торгово-развлекательной и социальной инфраструктурой.
+                    p Всего в 7-ми минутах езды от Yolkki Village находятся крупнейшие торговые центры района: МЕГА, ИКЕА, Ашан. <br>На первых этажах комплекса расположатся коммерческие помещения, в которых будут открыты отделение банка, аптека, продуктовый магазин, салон красоты, кафе и др.
+                .infra-tc
+                    .infra-tc--inn(data-animated="active")
+                        .infra-tc__title <span>7</span> мин.
+                        .infra-tc__text езды до крупнейших <br>торговых центров <br>района
+            .container-medium
+                .tabs.infra-tabs
+                    .infra-tabs-top.tabs__caption
+                        a(href="#" data-tab-link).infra-tabs__link.active Инфраструктура жилого комплекса
+                        a(href="#" data-tab-link).infra-tabs__link  Инфраструктура района
+                    .infra-tabs-content
+                        .infra-tabs-content-item.tabs__content.active
+                            img(src="assets/images/slider-bg1.jpg" alt='infra').infra-tabs-content-item__img
+                        .infra-tabs-content-item.tabs__content
+                            img(src="assets/images/slider-bg2.jpg" alt='infra').infra-tabs-content-item__img
+            .infra-bg
+                img(data-animated="slideInUp" src="assets/images/infra-bg.png").infra-bg__img.animated
+        section.section.adven
+            .adv-list
+                .adv-item.adv-item--first
+                    img(src="assets/images/advitem1.png" alt="img").adv-item__img
+                    .adv-item__title Безопасность
+                    .adv-item__text Для комфорта и безопасности будущих жильцов мы предусмотрели систему домофонной связи и видеонаблюдения, в жилых помещениях установят противопожарную сигнализацию.  Территория будет полностью закрыта от посторонних, подъезд к жилому комплексу ограничат шлагбаумом.
+                .adv-item.adv-item--second
+                    img(src="assets/images/advitem2.png" alt="img").adv-item__img
+                    .adv-item__title Благоустройство
+                    .adv-item__text Внутридомовая территория Yolkki Village – это продуманное и комфортное пространство для каждого жителя.  Детские площадки, рассчитанные как на малышей, так и на детей постарше, будут оборудованы набивным покрытием, защищающим от травм. Для людей, предпочитающих активный образ жизни, оборудуют спортивные площадки. Ландшафтным проектом запланировано масштабное озеленение.
+                .adv-item.adv-item--third
+                    img(src="assets/images/advitem3.png" alt="img").adv-item__img
+                    .adv-item__title Надежность
+                    .adv-item__text Надежность строительства обеспечивают ключевые финансовые партнеры Yolkki Village  - АО «Россельхозбанк» и ПАО «Энергомашбанк». Ипотечными партнерами, сотрудничающими только с проверенными компаниями, выступают крупнейшие участники российского рынка банковских услуг – ПАО Сбербанк, ВТБ24 (ПАО), АО Банк «СНГБ», АО «КБ ДельтаКредит» и др. <br>Проект реализуется в рамках Федерального закона 214. Все договоры долевого участия проходят обязательную государственную регистрацию в Управлении Росреестра по Санкт-Петербургу.
+        section.section.main-tabs
+            .container-medium.tabs
+                .main-tabs-controls.tabs__caption--animate
+                    .main-tabs-controls-item(data-tab-link).active
+                        i.flaticon-family-room.main-tabs-controls-item__img
+                        .main-tabs-controls-item__text Школа <br> и детский сад
+                    .main-tabs-controls-item(data-tab-link)
+                        i.flaticon-fountain.main-tabs-controls-item__img
+                        .main-tabs-controls-item__text В окружении <br> парков и озер
+                    .main-tabs-controls-item(data-tab-link)
+                        i.flaticon-baby-buggy.main-tabs-controls-item__img
+                        .main-tabs-controls-item__text Дворы <br> без машин
+                    .main-tabs-controls-item(data-tab-link)
+                        i.flaticon-gym.main-tabs-controls-item__img
+                        .main-tabs-controls-item__text Современные <br> площадки workout
+                    .main-tabs-controls-item(data-tab-link)
+                        i.flaticon-gym-1.main-tabs-controls-item__img
+                        .main-tabs-controls-item__text Спорт
+                    .main-tabs-controls-item(data-tab-link)
+                        i.flaticon-salad.main-tabs-controls-item__img
+                        .main-tabs-controls-item__text Фермерские <br> продукты
+                .main-tabs-content
+                    .main-tabs-content-item.tabs__content.animated.active
+                        .main-tabs-content-item__title Школа <br> и детский сад
+                        .main-tabs-content-item__text
+                            p Всего несколько минут понадобится родителям, чтобы отвести ребенка в детский сад или школу, потому что он расположится на территории жилого комплекса. <b>Ваш ребенок будет в безопасности.</b> Наслаждайтесь жизнью, зная, что все самое важное и ценное находится рядом!
+                            p Специально для удобства маленьких жителей и их родителей предусмотрено строительство муниципального дошкольного образовательного учреждения на 160 учеников, которое будет совмещено с начальной школой на 80 учеников. Рядом будут установлены спортивные и детские площадки.
+                    .main-tabs-content-item.tabs__content.animated
+                        .main-tabs-content-item__title Школа <br> и детский сад1
+                        .main-tabs-content-item__text
+                            p Всего несколько минут понадобится родителям, чтобы отвести ребенка в детский сад или школу, потому что он расположится на территории жилого комплекса. <b>Ваш ребенок будет в безопасности.</b> Наслаждайтесь жизнью, зная, что все самое важное и ценное находится рядом!
+                            p Специально для удобства маленьких жителей и их родителей предусмотрено строительство муниципального дошкольного образовательного учреждения на 160 учеников, которое будет совмещено с начальной школой на 80 учеников. Рядом будут установлены спортивные и детские площадки.
+                    .main-tabs-content-item.tabs__content.animated
+                        .main-tabs-content-item__title Школа <br> и детский сад2
+                        .main-tabs-content-item__text
+                            p Всего несколько минут понадобится родителям, чтобы отвести ребенка в детский сад или школу, потому что он расположится на территории жилого комплекса. <b>Ваш ребенок будет в безопасности.</b> Наслаждайтесь жизнью, зная, что все самое важное и ценное находится рядом!
+                            p Специально для удобства маленьких жителей и их родителей предусмотрено строительство муниципального дошкольного образовательного учреждения на 160 учеников, которое будет совмещено с начальной школой на 80 учеников. Рядом будут установлены спортивные и детские площадки.
+                    .main-tabs-content-item.tabs__content.animated
+                        .main-tabs-content-item__title Школа <br> и детский сад3
+                        .main-tabs-content-item__text
+                            p Всего несколько минут понадобится родителям, чтобы отвести ребенка в детский сад или школу, потому что он расположится на территории жилого комплекса. <b>Ваш ребенок будет в безопасности.</b> Наслаждайтесь жизнью, зная, что все самое важное и ценное находится рядом!
+                            p Специально для удобства маленьких жителей и их родителей предусмотрено строительство муниципального дошкольного образовательного учреждения на 160 учеников, которое будет совмещено с начальной школой на 80 учеников. Рядом будут установлены спортивные и детские площадки.
+                    .main-tabs-content-item.tabs__content.animated
+                        .main-tabs-content-item__title Школа <br> и детский сад4
+                        .main-tabs-content-item__text
+                            p Всего несколько минут понадобится родителям, чтобы отвести ребенка в детский сад или школу, потому что он расположится на территории жилого комплекса. <b>Ваш ребенок будет в безопасности.</b> Наслаждайтесь жизнью, зная, что все самое важное и ценное находится рядом!
+                            p Специально для удобства маленьких жителей и их родителей предусмотрено строительство муниципального дошкольного образовательного учреждения на 160 учеников, которое будет совмещено с начальной школой на 80 учеников. Рядом будут установлены спортивные и детские площадки.
+                    .main-tabs-content-item.tabs__content.animated
+                        .main-tabs-content-item__title Школа <br> и детский сад5
+                        .main-tabs-content-item__text
+                            p Всего несколько минут понадобится родителям, чтобы отвести ребенка в детский сад или школу, потому что он расположится на территории жилого комплекса. <b>Ваш ребенок будет в безопасности.</b> Наслаждайтесь жизнью, зная, что все самое важное и ценное находится рядом!
+                            p Специально для удобства маленьких жителей и их родителей предусмотрено строительство муниципального дошкольного образовательного учреждения на 160 учеников, которое будет совмещено с начальной школой на 80 учеников. Рядом будут установлены спортивные и детские площадки.
+            .main-tabs-bg
+                img(data-animated="slideInUp" src="assets/images/tabs-bg.png").main-tabs-bg__img.animated
+        section.section.big-slider
+            .big-slider-controls
+                a(href="#").big-slider-arrow.big-slider--prev
+                    i.mesto-slider-buttons-but__img.flaticon-arrows-2
+                .big-slider-pagination
+                a(href="#").big-slider-arrow.big-slider--next
+                    i.mesto-slider-buttons-but__img.flaticon-arrows-1
+            .big-slider-main
+                .big-slider-slide
+                    .big-slider-slide__img(style="background:url('assets/images/slider-bg4.jpg') center center no-repeat")
+                    .big-slider-slide-bot
+                        .big-slider-slide-bot__title Архитектура
+                        .big-slider-slide-bot__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aperiam excepturi exercitationem expedita explicabo inventore ipsam iusto, nam nihil nisi omnis perferendis provident quam quos sed ut vitae voluptate.
+                .big-slider-slide
+                    .big-slider-slide__img(style="background:url('assets/images/slider-bg4.jpg') center center no-repeat")
+                    .big-slider-slide-bot
+                        .big-slider-slide-bot__title Архитектура
+                        .big-slider-slide-bot__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aperiam excepturi exercitationem expedita explicabo inventore ipsam iusto, nam nihil nisi omnis perferendis provident quam quos sed ut vitae voluptate.
+                .big-slider-slide
+                        .big-slider-slide__img(style="background:url('assets/images/slider-bg4.jpg') center center no-repeat")
+                        .big-slider-slide-bot
+                            .big-slider-slide-bot__title Архитектура
+                            .big-slider-slide-bot__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aperiam excepturi exercitationem expedita explicabo inventore ipsam iusto, nam nihil nisi omnis perferendis provident quam quos sed ut vitae voluptate.
+                .big-slider-slide
+                    .big-slider-slide__img(style="background:url('assets/images/slider-bg4.jpg') center center no-repeat")
+                    .big-slider-slide-bot
+                        .big-slider-slide-bot__title Архитектура
+                        .big-slider-slide-bot__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aperiam excepturi exercitationem expedita explicabo inventore ipsam iusto, nam nihil nisi omnis perferendis provident quam quos sed ut vitae voluptate.
+        section.contacts.section
+            .contacts-main
+                .contacts-left
+                    .contacts-left-main
+                        .contacts-left__title Получите консультацию
+                        .contacts-left__text Наш менеджер предоставит вам бесплатную персональную консультацию и поможет подобрать необходимую квартиру
+                        a(href="#").contacts-left__but Получить консультацию
+                        a(href="tel:+78125011859").contacts-left__phone +7 (812) 501-18-59
+                .contacts-right#yandexmap1
+
+
+            footer.footer
+                .partners
+                    .partners-item
+                        .partners__title Партнёры по ипотечному кредитованию
+                        img(src="assets/images/partner1.png").partners__img
+                    .partners-item
+                        .partners__title Ипотечный партнер
+                        img(src="assets/images/partner2.png").partners__img
+                    .partners-item
+                        .partners__title Эксклюзивный партнер
+                        img(src="assets/images/partner3.png").partners__img
+                    .partners-item
+                        .partners__title Партнер по соц. программам
+                        img(src="assets/images/partner4.png").partners__img
+                .socials
+                    .socials__title Мы в соц. сетях
+                    .socials-main
+                        a(href="#").socials-item
+                            img(src="assets/images/socials7.png").socials-item__img
+                        a(href="#").socials-item
+                            img(src="assets/images/socials6.png").socials-item__img
+                        a(href="#").socials-item
+                            img(src="assets/images/socials5.png").socials-item__img
+                        a(href="#").socials-item
+                            img(src="assets/images/socials4.png").socials-item__img
+                        a(href="#").socials-item
+                            img(src="assets/images/socials3.png").socials-item__img
+                        a(href="#").socials-item
+                            img(src="assets/images/socials2.png").socials-item__img
+                        a(href="#").socials-item
+                            img(src="assets/images/socials1.png").socials-item__img
+                .politic
+                    a(href="#").politic__link Политика конфиденциальности
+
+
+
+
+
+
+
+
+
+
+
+
+
